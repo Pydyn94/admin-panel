@@ -1,6 +1,9 @@
-/* Colors */
-/* Font sizes */
-/* Fonts */
+/*COLORS*/
+/*FONT SIZES*/
+/*FONTS*/
+/*SECTION NAVIGATION*/
+/*SECTION SIDEBAR*/
+/*SECTION GENERAL*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -410,7 +413,7 @@ header {
   justify-content: flex-end;
   z-index: 1;
   background-color: #fff;
-  height: 70px;
+  height: 61px;
   width: 100%;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -423,7 +426,7 @@ header ul {
 
 header ul li {
   display: flex;
-  height: 70px;
+  height: 61px;
   border-left: 1px solid #e3e3e3;
 }
 
@@ -440,7 +443,7 @@ header ul li .icons-header {
 }
 
 header ul li .icons-header:hover {
-  color: #f58220;
+  color: #F58220;
 }
 
 header ul li .cash h2 {
@@ -451,13 +454,126 @@ header ul li .cash h2 {
 
 header ul li .name {
   padding: 30px 30px 30px 0;
-  color: #56819f;
+  color: #56819F;
   font-size: 15px;
   font-weight: 400;
 }
 
 header ul li .name:hover {
   color: #adb3bc;
+}
+
+.sidebar {
+  position: fixed;
+  width: 188px;
+  height: 100%;
+  z-index: 1;
+  background-color: #333333;
+}
+
+.title {
+  display: flex;
+  line-height: 61px;
+  color: #F5F5F2;
+  background: #333333;
+  padding-left: 18px;
+}
+
+.title .logo {
+  font-size: 24px;
+  color: #F5F5F2;
+  text-decoration: none;
+  font-family: "Caveat Brush", cursive;
+}
+
+.title .menu {
+  padding: 20px 20px 10px 15px;
+}
+
+.hamburger-menu {
+  height: 20px;
+  width: 22px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #F5F5F2;
+  border-radius: 7px;
+  opacity: 1;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 2.5px;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 11px;
+}
+
+.hamburger-menu span:nth-child(3) {
+  top: 19px;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 10px 18px 18px 20px;
+  font-size: 16px;
+  background: #333333;
+  color: #e3e3e3;
+}
+
+.nav li a:hover {
+  background: #444;
+  box-shadow: inset 5px 0 0 #F58220, inset 6px 0 0 #222;
+  color: #F5F5F2;
+}
+
+.nav li a i {
+  padding-right: 15px;
+}
+
+.contact {
+  line-height: 70px;
+  color: #e3e3e3;
+  background: #333333;
+  border-top: 1px solid #222;
+}
+
+.contact h3 {
+  font-size: 16px;
+  padding-left: 18px;
+  text-transform: uppercase;
+}
+
+.contact .manager {
+  display: flex;
+  position: relative;
+  padding-left: 18px;
+}
+
+.contact .manager .online {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: #04ae00;
+  margin-top: 15px;
+  border-radius: 100%;
+}
+
+.contact .manager .manager-photo .photo {
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.contact .manager-name {
+  font-size: 16px;
+  padding-left: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
