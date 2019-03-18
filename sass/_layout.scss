@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
+
 
 html,
 body {
@@ -63,4 +65,14 @@ body {
 
 .col-12 {
     flex: 100%;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-left: 188px;
+    padding-top: $height-nav;
+    height: auto;
+
 }

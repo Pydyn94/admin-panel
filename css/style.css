@@ -349,8 +349,7 @@ template {
   padding: 0;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -405,6 +404,15 @@ body {
 
 .col-12 {
   flex: 100%;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-left: 188px;
+  padding-top: 61px;
+  height: auto;
 }
 
 header {
@@ -583,18 +591,158 @@ header ul li .name:hover {
   margin: 15px;
 }
 
-.container .links {
+.row .general-head {
+  line-height: 47px;
+}
+
+.row .general-head h3 {
+  color: #979797;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 17px;
+}
+
+.row .inputs {
+  display: inline-flex;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 10px 20px 10px 10px;
+  max-width: 700px;
+}
+
+.row .calendar {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  padding: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.row .calendar .input-one input {
+  border: 0;
+  padding: 10px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.row .calendar .input-second input {
+  border: 0;
+  padding: 10px;
+}
+
+.row .calendar .fa-calendar-alt {
+  display: inline-flex;
+  color: #333333;
+  padding: 10px;
+}
+
+.row .calendar .fa-calendar-alt:hover {
+  color: #ffa200;
+  cursor: pointer;
+}
+
+.row .calendar button {
+  height: 40px;
+  width: 40px;
+  background-color: #F58220;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.row .calendar button:hover {
+  background-color: #ffa200;
+}
+
+.row .calendar button .fa-redo-alt {
+  color: #333333;
+  text-align: center;
+}
+
+.row .statistic {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.row .statistic .stats {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 40px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-left: 40px;
+}
+
+.row .statistic .stats .name {
+  color: #979797;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.row .statistic .stats .number {
+  color: #333333;
+  font-weight: 100;
+  font-size: 16px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.row .chart-head {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.row .chart-head h2 {
+  color: #979797;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.row .chart {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 70px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.row .chart img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-left: 50px;
+}
+
+.container_2 {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin: 15px;
+}
+
+.container_2 .links {
   position: relative;
   display: block;
 }
 
-.container .links .btn {
+.container_2 .links .btn {
   display: flex;
   justify-content: center;
   padding: 25px;
 }
 
-.container .links .links-table {
+.container_2 .links .links-table {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -604,20 +752,19 @@ header ul li .name:hover {
   margin: 0 auto;
 }
 
-.container .links-head {
+.container_2 .links-head {
   line-height: 47px;
 }
 
-.container .links-head h3 {
-  color: red;
+.container_2 .links-head h3 {
+  color: #979797;
   border-bottom: 1px solid #e3e3e3;
   font-size: 20px;
   text-transform: uppercase;
   padding: 17px;
-  z-index: 1;
 }
 
-.container .row {
+.container_2 .row {
   display: flex;
   justify-content: center;
   border-top: 1px solid #e3e3e3;
@@ -627,20 +774,20 @@ header ul li .name:hover {
   width: 700px;
 }
 
-.container .row:hover {
+.container_2 .row:hover {
   background-color: #e3e3e3;
 }
 
-.container .row a {
+.container_2 .row a {
   text-decoration: none;
   color: #56819F;
 }
 
-.container .row a:hover {
+.container_2 .row a:hover {
   color: #ffa200;
 }
 
-.container .row .title-links {
+.container_2 .row .title-links {
   display: flex;
   justify-content: left;
   width: 300px;
@@ -650,7 +797,7 @@ header ul li .name:hover {
   font-size: 16px;
 }
 
-.container .row .link {
+.container_2 .row .link {
   display: flex;
   justify-content: left;
   width: 300px;
@@ -660,21 +807,21 @@ header ul li .name:hover {
   color: #56819F;
 }
 
-.container .row .link .icons {
+.container_2 .row .link .icons {
   margin-right: 10px;
   width: 100px;
   color: #333333;
 }
 
-.container .row .link .icons:hover {
+.container_2 .row .link .icons:hover {
   color: #ffa200;
 }
 
-.container .row .link .icons .fa-link {
+.container_2 .row .link .icons .fa-link {
   margin-right: 10px;
 }
 
-.container button[type='submit'] {
+.container_2 button[type='submit'] {
   text-align: center;
   font-size: 20px;
   color: #F5F5F2;
@@ -685,7 +832,7 @@ header ul li .name:hover {
   border-radius: 10px;
 }
 
-.container button[type='submit']:hover {
+.container_2 button[type='submit']:hover {
   background-color: #ffa200;
   cursor: pointer;
 }

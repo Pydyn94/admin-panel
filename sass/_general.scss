@@ -1,0 +1,146 @@
+ .container {
+     width: 100%;
+     height: auto;
+     background-color: $white-color;
+     margin: 15px;
+
+ }
+
+ .row {
+
+     .general-head {
+         line-height: 47px;
+
+         h3 {
+             color: $brand-main-color;
+             border-bottom: $border;
+             font-size: 20px;
+             text-transform: uppercase;
+             padding: 17px;
+
+         }
+     }
+     .inputs {
+         display: inline-flex;
+         border: $border;
+         border-radius: 5px;
+         padding: 10px 20px 10px 10px;
+         max-width: $max-width-general;
+
+     }
+     .calendar {
+         display: flex;
+         justify-content: center;
+         margin-left: $margin-left-general;
+         padding: 20px;
+         border-bottom: $border;
+
+         .input-one input {
+             border: 0;
+             padding: 10px;
+             border-right: $border;
+
+         }
+         .input-second input {
+             border: 0;
+             padding: 10px;
+
+         }
+         .fa-calendar-alt {
+             display: inline-flex;
+             color: $black-color;
+             padding: 10px;
+
+             &:hover {
+                 color: $orange-hover-color;
+                 cursor: pointer;
+
+             }
+         }
+         button {
+             height: 40px;
+             width: 40px;
+             background-color: $orange-color;
+             border: none;
+             cursor: pointer;
+             border-radius: 5px;
+             margin: 10px;
+
+             &:hover {
+                 background-color: $orange-hover-color;
+
+             }
+             .fa-redo-alt {
+                 color: $black-color;
+                 text-align: center;
+
+             }
+         }
+     }
+     .statistic {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         padding-top: 30px;
+         max-width: $max-width-general;
+         margin: 0 auto;
+
+         .stats {
+             display: flex;
+             justify-content: space-between;
+             width: 300px;
+             height: 40px;
+             border-bottom: $border;
+             margin-left: $margin-left-general;
+
+             .name {
+                 color: $brand-main-color;
+                 font-size: $font-size-general;
+                 font-weight: $font-weight-general;
+                 margin-top: 10px;
+
+             }
+             .number {
+                 color: $black-color;
+                 font-weight: 100;
+                 font-size: $font-size-general;
+                 margin-right: 30px;
+                 margin-top: 10px;
+
+             }
+         }
+     }
+
+
+     .chart-head {
+         display: flex;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+         padding-top: 70px;
+         margin: 0 auto;
+         max-width: $max-width-general;
+
+         h2 {
+             color: $brand-main-color;
+             font-size: $font-size-general;
+             font-weight: $font-weight-general;
+             margin-left: 50px;
+
+         }
+     }
+     .chart {
+         display: flex;
+         justify-content: flex-start;
+         padding-top: 70px;
+         margin: 0 auto;
+         max-width: $max-width-general;
+
+         img {
+             max-width: 100%;
+             height: auto;
+             width: auto;
+             margin-left: 50px;
+
+         }
+     }
+ }
